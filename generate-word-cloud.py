@@ -2,7 +2,7 @@
 # -*- coding:utf8 -*-
 """
 A simple Python script to generate a square wordcloud from a file or a bunch of files.
-
+https://github.com/Naereen/generate-word-cloud.py
 
 Requires https://github.com/amueller/word_cloud/
 
@@ -26,7 +26,7 @@ Generate a wordcloud from all the txt files in the current directory, save it to
 
 .. sidebar:: Last version?
 
-   Take a look to the latest version at https://bitbucket.org/lbesson/bin/src/master/generate-word-cloud.py
+   Take a look to the latest version at https://github.com/Naereen/generate-word-cloud.py
 
 .. note::
 
@@ -112,7 +112,7 @@ def makeimage(wordcloud,
             print("Saving the generated image to '%s'..." % outname)
             if (not force) and path.exists(outname):
                 erase = raw_input("The outfile '%s' already exists, should I erase it ?  [y/N]")
-                if erase == 'Y':
+                if erase == 'y':
                     plt.savefig(outname)
                 else:
                     print("Not erasing it...")
