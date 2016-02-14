@@ -43,7 +43,7 @@ $ generate-word-cloud.py -o ./hamlet.png ./hamlet.txt
 ### From a lot of Bash scripts (~ 150)
 ![generate-word-cloud example bash](./wordcloud_bash.png)
 
-### From a lot of LaTeX scripts (~ 180)
+### From a lot of LaTeX files (~ 180)
 ![generate-word-cloud example LaTeX](./wordcloud_latex.png)
 
 ### Meta example
