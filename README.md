@@ -1,9 +1,9 @@
 # generate-word-cloud.py
-A simple Python 2 :snake: script to generate a square wordcloud :cloud: from a file or a bunch of files.
+A simple Python 2 :snake: script to generate a square wordcloud :cloud: from one or more text files.
 
 ![generate-word-cloud example meta](./wordcloud_meta.png)
 
-Based on the great [word_cloud](https://github.com/amueller/word_cloud/) module by [@amueller](https://github.com/amueller/).
+> Based on the great [word_cloud](https://github.com/amueller/word_cloud/) module by [@amueller](https://github.com/amueller/).
 
 ----
 
@@ -11,7 +11,7 @@ Based on the great [word_cloud](https://github.com/amueller/word_cloud/) module 
 ### Installation
 Clone the repository, copy the [script (generate-word-cloud.py)](./generate-word-cloud.py) somewhere in your PATH.
 
-The script is *not yet* available from [pip](http://www.pip-installer.org/).
+> Note: The script is *not yet* available from [pip](http://www.pip-installer.org/). It will be, soon.
 
 ### Usage
 #### Help:
@@ -22,13 +22,13 @@ $ generate-word-cloud.py --help
 Generate a wordcloud from two `txt` files in the current directory, save it to `wordcloud_txt.png`.
 
 ```bash
-$ generate-word-cloud.py -o wordcloud_txt.png ./file1.txt ./file2.txt
+$ generate-word-cloud.py -o ./wordcloud_txt.png ./file1.txt ./file2.txt
 ```
 
 Generate a wordcloud from the textfile `hamlet.txt` (~ 8000 lines), saving to `hamlet.png`:
 
 ```bash
-$ generate-word-cloud.py -o hamlet.png ./hamlet.txt
+$ generate-word-cloud.py -o ./hamlet.png ./hamlet.txt
 ```
 ![generate-word-cloud example hamlet](./wordcloud_hamlet.png)
 
@@ -47,15 +47,12 @@ $ generate-word-cloud.py -o hamlet.png ./hamlet.txt
 ![generate-word-cloud example LaTeX](./wordcloud_latex.png)
 
 ### Meta example
-Generate a wordcloud from the [README.md](./README.md) and [generate-word-cloud.py](./generate-word-cloud.py) files **of this vert project**, save it to `wordcloud_meta.png`!
+Generate a wordcloud from the [README.md](./README.md) and [generate-word-cloud.py](./generate-word-cloud.py) files **of this very project**, save it to `wordcloud_meta.png`!
 
 ```bash
-$ generate-word-cloud.py -o wordcloud_meta.png ./*.md ./*.py
+$ generate-word-cloud.py -o ./wordcloud_meta.png ./*.md ./*.py
 ```
 ![generate-word-cloud example meta](./wordcloud_meta.png)
-
-### From [an entire book](https://en.wikipedia.org/wiki/The_Belgariad)
-![generate-word-cloud example entirebook](./wordcloud_entirebook.png)
 
 ----
 
