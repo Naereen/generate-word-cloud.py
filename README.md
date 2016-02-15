@@ -66,7 +66,7 @@ $ generate-word-cloud.py -o ./wordcloud_meta.png ./*.md ./*.py
 
 ## Complete documentation (`--help`)
 ```
-generate-word-cloud.py -h
+$ generate-word-cloud.py -h | --help
 usage: generate-word-cloud.py [-h] [-v] [-s] [-f] [-o OUTFILE] [-t TITLE]
                               [-m MAX] [-w WIDTH] [-H HEIGHT]
                               INFILE [INFILE ...]
@@ -94,13 +94,17 @@ optional arguments:
 ## TODO?
 - [x] Start it, from [this example](https://github.com/amueller/word_cloud/blob/master/examples/simple.py),
 - [x] Run it on some interesting examples, embed them here,
-- [ ] Check on weird encodings?,
+- [ ] Check on weird encodings?
 - [ ] Test it against :closed_book: VERY large files (million of line) ?,
 - [ ] Test it against :books: LOTS of files (several thousands) ?,
 - [ ] Write a small article about it for [my blog](http://perso.crans.org/besson/).
 
 ### Knows issues
-- [ ] Input filenames with spaces in their name are seen as several files.
+- [ ] Input filenames with spaces in their name are seen as several files. I will try to fix it asap!
+- [ ] Only tested on Ubuntu (15.10).
+
+### Unknown issues?
+> [Use the issue tracker](https://github.com/Naereen/generate-word-cloud.py/issues/new) to notify me of a bug.
 
 ----
 
