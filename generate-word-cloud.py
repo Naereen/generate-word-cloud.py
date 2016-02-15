@@ -170,19 +170,19 @@ def main(argv):
 
     group = parser.add_argument_group()
     group.add_argument('-s', '--show', action='store_true', default=False,
-                       help="show the image but do not save it")
+                       help="show the image but do not save it (default to False)")
     group.add_argument('-f', '--force', action='store_true', default=False,
                        help="force to write the image, even if present (default is to ask before overwriting an existing file)")
     group.add_argument('-o', '--outfile', default=None,
                        help="filename for the generated image, default is 'wordcloud.png'")
     group.add_argument('-t', '--title', default=None,
                        help="title for the image, default is None")
-    group.add_argument('-m', '--max', action='store', default=100,
-                       help="max number of words to display on the cloud word")
+    group.add_argument('-m', '--max', action='store', default=150,
+                       help="max number of words to display on the cloud word (default 150 words)")
     group.add_argument('-w', '--width', action='store', default=400,
-                       help="width of the generate image")
+                       help="width of the generate image (default 400px)")
     group.add_argument('-H', '--height', action='store', default=300,
-                       help="height of the generate image")
+                       help="height of the generate image (default 300px)")
 
     # The rest of the arguments are INFILE
     group.add_argument('infiles', metavar='INFILE', type=str, nargs='+',
