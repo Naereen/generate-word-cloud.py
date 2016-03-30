@@ -111,7 +111,7 @@ def makeimage(wordcloud,
         else:
             print("Saving the generated image to '%s'..." % outname)
             if (not force) and path.exists(outname):
-                erase = raw_input("The outfile '%s' already exists, should I erase it ?  [y/N]")
+                erase = raw_input("The outfile '%s' already exists, should I erase it ?  [y/N]" % outname)
                 if erase == 'y':
                     plt.savefig(outname)
                 else:
