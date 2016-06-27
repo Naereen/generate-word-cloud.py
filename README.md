@@ -1,5 +1,6 @@
-# generate-word-cloud.py
-A simple Python 2 :snake: script to generate a square wordcloud :cloud: from one or more text files.
+# ``generate-word-cloud.py``
+A simple Python :snake: script to generate a square wordcloud :cloud: from one (or more) text file(s).
+Supports Python 2 or 3 (2.7+ or 3.4+).
 
 ![generate-word-cloud example meta](./wordcloud_meta.png)
 
@@ -9,9 +10,14 @@ A simple Python 2 :snake: script to generate a square wordcloud :cloud: from one
 
 ## How to use it?
 ### Installation
-Clone the repository, copy the [script (generate-word-cloud.py)](./generate-word-cloud.py) somewhere in your PATH.
+Clone the repository, copy the [script (generate-word-cloud.py)](./generate-word-cloud.py) somewhere in your PATH (e.g., ``~/.local/bin/``):
 
-> Note: The script is *not yet* available from [pip](http://www.pip-installer.org/). It will be, soon.
+```bash
+$ wget https://raw.githubusercontent.com/Naereen/generate-word-cloud.py/master/generate-word-cloud.py
+$ cp generate-word-cloud.py /path/to/a/directory/in/your/PATH/
+```
+
+> Note: The script is *not yet* available from [pip](http://www.pip-installer.org/). It might be, soon.
 
 ### Usage
 #### Help:
@@ -37,16 +43,16 @@ $ generate-word-cloud.py -o ./hamlet.png ./hamlet.txt
 ----
 
 ## Other examples
-### From a lot of Python scripts (~ 200)
+### From a lot of Python scripts (~ 200) :snake:
 ![generate-word-cloud example python](./wordcloud_python.png)
 
-### From a lot of Bash scripts (~ 150)
+### From a lot of Bash scripts (~ 150) :shell:
 ![generate-word-cloud example bash](./wordcloud_bash.png)
 
-### From a lot of LaTeX files (~ 180)
+### From a lot of LaTeX files (~ 180) :eggplant:
 ![generate-word-cloud example LaTeX](./wordcloud_latex.png)
 
-### Meta example
+### :art: Meta example
 Generate a wordcloud from the [README.md](./README.md) and [generate-word-cloud.py](./generate-word-cloud.py) files **of this very project**, save it to `wordcloud_meta.png`!
 
 ```bash
@@ -64,7 +70,7 @@ $ generate-word-cloud.py -o ./wordcloud_meta.png ./*.md ./*.py
 
 ----
 
-## Complete documentation (`--help`)
+## :page_with_curl: Complete documentation (`--help`)
 ```
 $ generate-word-cloud.py -h | --help
 usage: generate-word-cloud.py [-h] [-v] [-s] [-f] [-o OUTFILE] [-t TITLE]
@@ -91,7 +97,7 @@ optional arguments:
 
 ----
 
-## TODO?
+## :memo: TODO?
 - [x] Start it, from [this example](https://github.com/amueller/word_cloud/blob/master/examples/simple.py),
 - [x] Run it on some interesting examples, embed them here,
 - [ ] Check on weird encodings?
@@ -99,11 +105,11 @@ optional arguments:
 - [ ] Test it against :books: LOTS of files (several thousands) ?,
 - [ ] Write a small article about it for [my blog](http://perso.crans.org/besson/).
 
-### Knows issues
+### :bug: Knows issues
 - [ ] Input filenames with spaces in their name are seen as several files. I will try to fix it asap!
 - [ ] Only tested on Ubuntu (15.10).
 
-### Unknown issues?
+### :bug: Unknown issues?
 > [Use the issue tracker](https://github.com/Naereen/generate-word-cloud.py/issues/new) to notify me of a bug.
 
 ----
@@ -117,5 +123,7 @@ optional arguments:
 ### Author
 > [Lilian Besson (Naereen)](https://github.com/Naereen/).
 
-### [License](./LICENSE)
+### :scroll: [License](./LICENSE)
 > [GPLv3 License](http://www.gnu.org/licenses/gpl.html).
+
+[![Analytics](https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/generate-word-cloud.py/README.md?pixel)](https://github.com/Naereen/generate-word-cloud.py/)
