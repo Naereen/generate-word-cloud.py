@@ -44,42 +44,51 @@ Generate a wordcloud from all the txt files in the current directory, save it to
    If not, see <http://perso.crans.org/besson/LICENSE.html>.
 """
 
-from __future__ import print_function
+from __future__ import print_function  # Python 2/3 compatible
+
 from sys import exit, argv
-import argparse
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from os import path
+# import argparse  # DONE : switch to docopt (https://github.com/docopt/docopt)
+from docopt import docopt
+
+try:
+    try:
+        from ansicolortags import printc
+    except ImportError as e:
+        print("Optional dependancy (ansicolortags) is not available, using regular print function.")
+        print("  You can install it with : 'pip install ansicolortags' (or sudo pip)...")
+        from ANSIColors import printc
+except ImportError:
+    printc = print
 
 # Options
-version = '0.1'
+version = '0.2'
 show = False
 
 
 def readfiles(filenames):
     """ Return the content of each file, concatenated as one big string.
 
-    - Path should be relative or absolute, but nothing fancy is done here.
+    - Path could be relative or absolute, but nothing fancy is done here.
     """
-    # d = path.dirname(__file__)
     text = ""
     # Read the whole text for each file
     for filename in filenames:
         try:
-            # text += open(path.join(d, 'constitution.txt')).read()
             text += open(filename, 'r').read()
             text += r"\n"
         except Exception as e:
-            print("Error, exception:", e)
-            print("Skipping file '%s'..." % filename)
+            printc("<ERROR>Error, exception: <reset>{}.".format(e))
+            printc("<red>Skipping file <black>'{}'<reset>...".format(filename))
     # return "\n".join(open(filename, 'r').read() for filename in filenames)
     return text
 
 
 def generate(text, max_words=200, width=800, height=600):
     """ Generate a word cloud image from the given text (one huge string). """
-    # wordcloud = WordCloud().generate(text)
-    # take relative word frequencies into account, lower max_font_size
+    # Take relative word frequencies into account, lower max_font_size
     # https://amueller.github.io/word_cloud/generated/wordcloud.WordCloud.html#wordcloud.WordCloud
     wc = WordCloud(max_font_size=40,
                    relative_scaling=.5,
@@ -87,67 +96,90 @@ def generate(text, max_words=200, width=800, height=600):
                    width=width,
                    height=height
                    )
-    # wordcloud = wc.generate(text)
     return wc.generate(text)
 
 
 def makeimage(wordcloud,
               outname='wordcloud.png', title='Word cloud', show=False, force=False):
     """ Display or save the wordcloud as a image. """
+    # Display the generated image:
     try:
-        # Display the generated image:
-        # the matplotlib way:
-        # plt.imshow(wordcloud)
-        # plt.axis("off")
+        # 2. the matplotlib way:
         plt.figure()
         plt.imshow(wordcloud)
         plt.axis("off")
         if title:
-            print("Using title '%s'." % title)
+            printc("<magenta>Using title<reset> <blue>'{}'<reset>.".format(title))
             plt.title(title)
         if show:
-            print("Showing the generated image...")
+            printc("<green>Showing the generated image...<reset>")
             plt.show()
         else:
-            print("Saving the generated image to '%s'..." % outname)
+            printc("<green>Saving the generated image<reset> to <blue>'{}'<reset>...".format(outname))
             if (not force) and path.exists(outname):
-                erase = raw_input("The outfile '%s' already exists, should I erase it ?  [y/N]" % outname)
+                erase = raw_input("The outfile '{}' already exists, should I erase it ?  [y/N]".format(outname))
                 if erase == 'y':
                     plt.savefig(outname)
                 else:
-                    print("Not erasing it...")
-                    print("Showing the generated image...")
+                    printc("<magenta>Not erasing it...<reset>")
+                    printc("<green>Showing the generated image...<reset>")
                     plt.show()
             else:
                 if force:
-                    print("-f or --force has been used, overwriting the image '%s' without asking you..." % outname)
+                    printc("<WARNING> -f or --force has been used, overwriting the image '{}' <red>without<reset> asking you...".format(outname))
                 plt.savefig(outname)
     except Exception as e:
-        print("Error, exception:", e)
-        # The pil way (if you don't have matplotlib)
-        print("Something went wrong with matplotlib, switching to PIL backend... (just showing the image, not saving it)")
+        printc("<ERROR> Error, exception<reset>: {}".format(e))
+        # 1. The pil way (if you don't have matplotlib)
+        printc("<WARNING> Something went wrong with matplotlib, switching to PIL backend... (just showing the image, <red>not<reset> saving it!)")
         image = wordcloud.to_image()
         image.show()
     return True
 
 
 #: Help for the cli
-description = """
-A simple Python script to generate a square wordcloud from a file or bunch of files.
-Requires https://github.com/amueller/word_cloud/
+full_docopt_text = """
+generate-word-cloud.py
+
+Usage:
+  generate-word-cloud.py [-s | --show] [-f | --force] [-o OUTFILE | --outfile=OUTFILE]
+                         [-t TITLE | --title=TITLE] [-m MAX | --max=MAX]
+                         [-w WIDTH | --width=WIDTH] [-H HEIGHT | --height=HEIGHT]
+                         INFILE...
+  generate-word-cloud.py (-h | --help)
+  generate-word-cloud.py (-v | --version)
+
+Options:
+  -h --help            Show this help message and exit.
+  -v --version         Show program's version number and exit.
+  -s --show            Show the image but do not save it [default False].
+  -f --force           Force to write the image, even if present (default is to ask before overwriting an existing file) [default False].
+  -o OUTFILE --outfile=OUTFILE
+                       Filename for the generated image [default 'wordcloud.png'].
+  -t TITLE --title=TITLE
+                       Title for the image [default None].
+  -m MAX --max MAX
+                       Max number of words to display on the cloud word [default 150].
+  -w WIDTH --width WIDTH
+                       Width of the generate image [default 400].
+  -H HEIGHT --height HEIGHT
+                       Height of the generate image [default 300].
+  INFILE               A text file to read.
+
+
+A simple Python script to generate a (square) wordcloud from a file INFILE (or bunch of files INFILE...).
+Requires https://github.com/amueller/word_cloud/ (installable with pip).
 
 Examples:
 $ generate-word-cloud.py --help
 Gives this help.
 
 $ generate-word-cloud.py ./hamlet.txt
-Generate a wordcloud from the textfile hamlet.txt, saving to hamlet.png.
+Generate a wordcloud from the textfile hamlet.txt, saving to 'wordcloud.png' (default).
 
 $ generate-word-cloud.py -o mywordcloud.png ./*.txt
-Generate a wordcloud from all the txt files in the current directory, save it to mywordcloud.png.
-"""
+Generate a wordcloud from all the txt files in the current directory, save it to 'mywordcloud.png'.
 
-epilog = """
 Copyright 2016 Lilian Besson (License GPLv3)
 generate-word-cloud.py is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -157,59 +189,25 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 def main(argv):
     """ Use the arguments of the command line. """
-    # infiles = []
-    # title = None
-    # We use the argparse std library
-    parser = argparse.ArgumentParser(
-        formatter_class=argparse.RawTextHelpFormatter,
-        description=description,
-        epilog=epilog,
-        prefix_chars='-+'
-    )
-    parser.add_argument('-v', '--version', action='version', version='%(prog)s '+version)
-
-    group = parser.add_argument_group()
-    group.add_argument('-s', '--show', action='store_true', default=False,
-                       help="show the image but do not save it (default to False)")
-    group.add_argument('-f', '--force', action='store_true', default=False,
-                       help="force to write the image, even if present (default is to ask before overwriting an existing file)")
-    group.add_argument('-o', '--outfile', default=None,
-                       help="filename for the generated image, default is 'wordcloud.png'")
-    group.add_argument('-t', '--title', default=None,
-                       help="title for the image, default is None")
-    group.add_argument('-m', '--max', action='store', default=150,
-                       help="max number of words to display on the cloud word (default 150 words)")
-    group.add_argument('-w', '--width', action='store', default=400,
-                       help="width of the generate image (default 400px)")
-    group.add_argument('-H', '--height', action='store', default=300,
-                       help="height of the generate image (default 300px)")
-
-    # The rest of the arguments are INFILE
-    group.add_argument('infiles', metavar='INFILE', type=str, nargs='+',
-                       help='a text file to read')
-
     # Use the arg parser
-    args = parser.parse_args(argv)
-    print("Args:", args)
+    args = docopt(full_docopt_text, argv=argv, version="generate-word-cloud.py v{}".format(version))
+    # printc("<magenta>Arguments: {} <reset>".format(args))  # DEBUG
 
     # Read the files
-    print("Reading the files, from:", args.infiles)  # XXX
-    text = readfiles(args.infiles)
+    printc("<green>Reading the files<reset>, from: <blue>{}<reset>.".format(args['INFILE']))
+    text = readfiles(args['INFILE'])
     # Decide where to save it
-    if args.outfile:
-        outname = args.outfile
-    else:
-        outname = 'wordcloud.png'
+    outname = args['--outfile'] if args['--outfile'] else 'wordcloud.png'
     # Generate the wordcloud
-    # print("Making a wordcloud from this text:\n", text)  # XXX
+    # print("Making a wordcloud from this text:\n", text)  # DEBUG
     wordcloud = generate(text,
-                         max_words=int(args.max), width=int(args.width), height=int(args.height)
+                         max_words=int(args['--max']), width=int(args['--width']), height=int(args['--height'])
                          )
     # Finally, saving the image
-    print("Making the image and saving it to", outname)  # XXX
+    printc("<green>Making the image<reset> and saving it to <blue>{}<reset>.".format(outname))
     makeimage(wordcloud,
-              outname=outname, title=args.title,
-              force=args.force, show=args.show
+              outname=outname, title=args['--title'],
+              force=args['--force'], show=args['--show']
               )
     return 0
 

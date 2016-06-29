@@ -1,3 +1,4 @@
-argparse
 matplotlib >= 1.5
 wordcloud >= 1.2
+docopt
+ansicolortags
