@@ -1,0 +1,125 @@
+************* Module generate-word-cloud
+C: 98, 0: Wrong continued indentation (remove 1 space).
+                   )
+                  |^ (bad-continuation)
+C:205, 0: Wrong continued indentation (remove 1 space).
+                         )
+                        |^ (bad-continuation)
+C:211, 0: Wrong continued indentation (remove 1 space).
+              )
+             |^ (bad-continuation)
+W: 49, 0: Redefining built-in 'exit' (redefined-builtin)
+W: 62, 8: Uses of a deprecated module 'ANSIColors' (deprecated-module)
+W: 82,15: Catching too general exception Exception (broad-except)
+W:103,59: Redefining name 'show' from outer scope (line 68) (redefined-outer-name)
+W:131,11: Catching too general exception Exception (broad-except)
+W:190, 9: Redefining name 'argv' from outer scope (line 49) (redefined-outer-name)
+C: 52, 0: standard import "from os import path" comes before "import matplotlib.pyplot as plt" (wrong-import-order)
+
+
+Report
+======
+70 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |1          |=          |100.00      |100.00   |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |4      |0          |+4.00      |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    ANSIColors (generate-word-cloud)
+    ansicolortags (generate-word-cloud)
+    docopt (generate-word-cloud)
+    matplotlib 
+      \-pyplot (generate-word-cloud)
+    wordcloud (generate-word-cloud)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |131    |59.82 |131      |=          |
++----------+-------+------+---------+-----------+
+|docstring |50     |22.83 |50       |=          |
++----------+-------+------+---------+-----------+
+|comment   |20     |9.13  |20       |=          |
++----------+-------+------+---------+-----------+
+|empty     |18     |8.22  |18       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |4      |0        |+4.00      |
++-----------+-------+---------+-----------+
+|refactor   |0      |0        |=          |
++-----------+-------+---------+-----------+
+|warning    |6      |8        |-2.00      |
++-----------+-------+---------+-----------+
+|error      |0      |0        |=          |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++---------------------+------------+
+|message id           |occurrences |
++=====================+============+
+|bad-continuation     |3           |
++---------------------+------------+
+|redefined-outer-name |2           |
++---------------------+------------+
+|broad-except         |2           |
++---------------------+------------+
+|wrong-import-order   |1           |
++---------------------+------------+
+|redefined-builtin    |1           |
++---------------------+------------+
+|deprecated-module    |1           |
++---------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 8.57/10 (previous run: 8.86/10, -0.29)
+

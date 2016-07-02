@@ -1,0 +1,83 @@
+Help on module generate-word-cloud:
+
+NAME
+    generate-word-cloud
+
+FILE
+    /home/lilian/publis/generate-word-cloud.py/generate-word-cloud.py
+
+DESCRIPTION
+    A simple Python script to generate a square wordcloud from a file or a bunch of files.
+    https://github.com/Naereen/generate-word-cloud.py
+    
+    Requires https://github.com/amueller/word_cloud/
+    
+    .. note:: Copyright 2016 Lilian Besson
+    .. warning:: License GPLv3.
+    
+    ---
+    
+    Examples
+    --------
+    $ generate-word-cloud.py --help
+    Gives help.
+    
+    $ generate-word-cloud.py ./hamlet.txt
+    Generate a wordcloud from the textfile hamlet.txt, saving to hamlet.png.
+    
+    $ generate-word-cloud.py -o wordcloud.png ./*.txt
+    Generate a wordcloud from all the txt files in the current directory, save it to wordcloud.png.
+    
+    ------
+    
+    .. sidebar:: Last version?
+    
+       Take a look to the latest version at https://github.com/Naereen/generate-word-cloud.py
+    
+    .. note::
+    
+       This program is free software: you can redistribute it and/or modify
+       it under the terms of the GNU General Public License as published by
+       the Free Software Foundation, either version 3 of the License, or
+       (at your option) any later version.
+    
+       generate-word-cloud.py is distributed in the hope that it will be useful,
+       but WITHOUT ANY WARRANTY; without even the implied warranty of
+       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    
+       See the GNU General Public License for more details.
+       You should have received a copy of the GNU General Public License v3 along with generate-word-cloud.py.
+       If not, see <http://perso.crans.org/besson/LICENSE.html>.
+
+FUNCTIONS
+    exit(...)
+        exit([status])
+        
+        Exit the interpreter by raising SystemExit(status).
+        If the status is omitted or None, it defaults to zero (i.e., success).
+        If the status is an integer, it will be used as the system exit status.
+        If it is another kind of object, it will be printed and the system
+        exit status will be one (i.e., failure).
+    
+    generate(text, max_words=200, width=800, height=600)
+        Generate a word cloud image from the given text (one huge string).
+    
+    main(argv)
+        Use the arguments of the command line.
+    
+    makeimage(wordcloud, outname='wordcloud.png', title='Word cloud', show=False, force=False)
+        Display or save the wordcloud as a image.
+    
+    readfiles(filenames)
+        Return the content of each file, concatenated as one big string.
+        
+        - Path could be relative or absolute, but nothing fancy is done here.
+
+DATA
+    argv = ['/usr/bin/pydoc2.7', 'generate-word-cloud']
+    full_docopt_text = '\ngenerate-word-cloud.py\n\nUsage:\n  generate-wor...
+    print_function = _Feature((2, 6, 0, 'alpha', 2), (3, 0, 0, 'alpha', 0)...
+    show = False
+    version = '0.2'
+
+

@@ -1,0 +1,96 @@
+************* Module generate-word-cloud
+W: 49, 0: import missing `from __future__ import absolute_import` (no-absolute-import)
+W: 50, 0: import missing `from __future__ import absolute_import` (no-absolute-import)
+W: 51, 0: import missing `from __future__ import absolute_import` (no-absolute-import)
+W: 52, 0: import missing `from __future__ import absolute_import` (no-absolute-import)
+W: 54, 0: import missing `from __future__ import absolute_import` (no-absolute-import)
+W: 58, 8: import missing `from __future__ import absolute_import` (no-absolute-import)
+W: 62, 8: import missing `from __future__ import absolute_import` (no-absolute-import)
+W:120,24: raw_input built-in referenced (raw_input-builtin)
+
+
+Report
+======
+70 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |NC         |NC         |NC          |NC       |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |131    |59.82 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |50     |22.83 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |20     |9.13  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |18     |8.22  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |8      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++-------------------+------------+
+|message id         |occurrences |
++===================+============+
+|no-absolute-import |7           |
++-------------------+------------+
+|raw_input-builtin  |1           |
++-------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 8.86/10
+

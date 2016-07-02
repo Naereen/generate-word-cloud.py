@@ -1,0 +1,45 @@
+generate-word-cloud.py
+
+Usage:
+  generate-word-cloud.py [-s | --show] [-f | --force] [-o OUTFILE | --outfile=OUTFILE]
+                         [-t TITLE | --title=TITLE] [-m MAX | --max=MAX]
+                         [-w WIDTH | --width=WIDTH] [-H HEIGHT | --height=HEIGHT]
+                         INFILE...
+  generate-word-cloud.py (-h | --help)
+  generate-word-cloud.py (-v | --version)
+
+Options:
+  -h --help            Show this help message and exit.
+  -v --version         Show program's version number and exit.
+  -s --show            Show the image but do not save it [default False].
+  -f --force           Force to write the image, even if present (default is to ask before overwriting an existing file) [default False].
+  -o OUTFILE --outfile=OUTFILE
+                       Filename for the generated image [default 'wordcloud.png'].
+  -t TITLE --title=TITLE
+                       Title for the image [default None].
+  -m MAX --max MAX
+                       Max number of words to display on the cloud word [default 150].
+  -w WIDTH --width WIDTH
+                       Width of the generate image [default 400].
+  -H HEIGHT --height HEIGHT
+                       Height of the generate image [default 300].
+  INFILE               A text file to read.
+
+
+A simple Python script to generate a (square) wordcloud from a file INFILE (or bunch of files INFILE...).
+Requires https://github.com/amueller/word_cloud/ (installable with pip).
+
+Examples:
+$ generate-word-cloud.py --help
+Gives this help.
+
+$ generate-word-cloud.py ./hamlet.txt
+Generate a wordcloud from the textfile hamlet.txt, saving to 'wordcloud.png' (default).
+
+$ generate-word-cloud.py -o mywordcloud.png ./*.txt
+Generate a wordcloud from all the txt files in the current directory, save it to 'mywordcloud.png'.
+
+Copyright 2016 Lilian Besson (License GPLv3)
+generate-word-cloud.py is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
