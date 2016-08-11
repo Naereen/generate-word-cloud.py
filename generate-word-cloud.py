@@ -90,6 +90,9 @@ def generate(text, max_words=200, width=800, height=600):
     """ Generate a word cloud image from the given text (one huge string). """
     # Take relative word frequencies into account, lower max_font_size
     # https://amueller.github.io/word_cloud/generated/wordcloud.WordCloud.html#wordcloud.WordCloud
+    max_words = int(max_words) if max_words is not None else  200
+    width     = int(width)     if width     is not None else  800
+    height    = int(height)    if height    is not None else  600
     wc = WordCloud(max_font_size=40,
                    relative_scaling=.5,
                    max_words=max_words,
@@ -146,8 +149,8 @@ Usage:
                          [-t TITLE | --title=TITLE] [-m MAX | --max=MAX]
                          [-w WIDTH | --width=WIDTH] [-H HEIGHT | --height=HEIGHT]
                          INFILE...
-  generate-word-cloud.py (-h | --help)
-  generate-word-cloud.py (-v | --version)
+  generate-word-cloud.py [-h | --help]
+  generate-word-cloud.py [-v | --version]
 
 Options:
   -h --help            Show this help message and exit.
@@ -201,7 +204,9 @@ def main(argv):
     # Generate the wordcloud
     # print("Making a wordcloud from this text:\n", text)  # DEBUG
     wordcloud = generate(text,
-                         max_words=int(args['--max']), width=int(args['--width']), height=int(args['--height'])
+                         max_words=args['--max'],
+                         width=args['--width'],
+                         height=args['--height']
                          )
     # Finally, saving the image
     printc("<green>Making the image<reset> and saving it to <blue>{}<reset>.".format(outname))
