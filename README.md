@@ -127,14 +127,14 @@ Options:
 ## :memo: TODO
 - [x] Start it, from [this example](https://github.com/amueller/word_cloud/blob/master/examples/simple.py),
 - [x] Run it on some interesting examples, embed them here (as images),
-- [ ] Check on weird encodings? (i.e., not UTF-8).
-- [ ] Test it against :closed_book: VERY large files (million of line) ?,
-- [ ] Test it against :books: LOTS of files (several thousands) ?,
+- [X] Check on weird encodings? (i.e., not UTF-8). It works fine!
+- [X] Test it against :closed_book: VERY large files (million of line) ? It works fine, slowly but fine.
+- [X] Test it against :books: LOTS of files (several thousands) ? It works fine, slowly but fine.
+- [ ] Publish it on PyPI !
 - [ ] Write a small article about it for [my blog](http://perso.crans.org/besson/).
 
 ### :bug: Knows issues
-- [ ] Right now, it should fail on non-UTF-8 or non-ASCII files.
-- [ ] Only tested on (X)Ubuntu (15.10), but it should work on other GNU/Linux distribution and Mac OS X (and probably Windows) that support [docopt](https://github.com/docopt/docopt) and has both [docopt](https://github.com/docopt/docopt) and [word_cloud](https://github.com/amueller/word_cloud/) installed.
+- [ ] Only tested on (X)Ubuntu (15.10), but it should work on other GNU/Linux distribution and Mac OS X (and probably Windows), if they support [docopt](https://github.com/docopt/docopt) and has both [docopt](https://github.com/docopt/docopt) and [word_cloud](https://github.com/amueller/word_cloud/) installed.
 
 ### :bug: **Unknown issues?**
 > [Use the issue tracker](https://github.com/Naereen/generate-word-cloud.py/issues/new) to notify me of a bug!
@@ -142,17 +142,26 @@ Options:
 ----
 
 ## About
-### Why write this script?
+### *Why write this script?*
 > There already is a lot of [good cloud word generator online](https://duckduckgo.com/?q=cloud+word+generator&ia=web), e.g. [wordle.net](http://www.wordle.net/).
 
 1. I wanted a way to visualize the major keywords of Bash and Python (my two [favorite programming languages](https://wakatime.com/@lbesson)) and of Markdown/Strapdown, reStructuredText and LaTeX (my favorite typeset documents system),
 2. The original project [word_cloud](https://github.com/amueller/word_cloud/) seemed cool. And it is. Great job [@amueller](https://github.com/amueller/) :clap: !
-3. [Clouds of words are interesting](https://www.academia.edu/20224642/)!
+3. [Clouds of words are interesting](https://www.academia.edu/20224642/)! And Python is awesome!
 
 ### Author
 > [Lilian Besson (Naereen)](https://github.com/Naereen/).
 
-### :scroll: [License](./LICENSE)
-> [GPLv3 License](http://www.gnu.org/licenses/gpl.html).
+## :scroll: License ? [![GitHub license](https://img.shields.io/github/license/Naereen/generate-word-cloud.py.svg)](https://github.com/Naereen/generate-word-cloud.py/blob/master/LICENSE)
+This plug-in is published under the terms of the [GPLv3 License](http://www.gnu.org/licenses/gpl.html) (file [LICENSE.txt](LICENSE.txt)),
+© [Lilian Besson](https://GitHub.com/Naereen), 2016.
 
-[![Analytics](https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/generate-word-cloud.py/README.md?pixel)](https://github.com/Naereen/generate-word-cloud.py/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/generate-word-cloud.py/graphs/commit-activity)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+[![Analytics](https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/generate-word-cloud.py/README.md?pixel)](https://GitHub.com/Naereen/generate-word-cloud.py/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+[![ForTheBadge uses-badges](http://ForTheBadge.com/images/badges/uses-badges.svg)](http://ForTheBadge.com)
+[![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/)
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
