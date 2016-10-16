@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Generate-word-cloud.py : A simple Python 2 script to generate a PNG word-cloud image from a bunch of text files. Based on word_cloud by @amueller.">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Generate-word-cloud.py</title>
+    <meta charset="UTF-8">
+    <title>Generate-word-cloud.py by Naereen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Generate-word-cloud.py</h1>
+      <h2 class="project-tagline">A simple Python 2 script to generate a PNG word-cloud image from a bunch of text files. Based on word_cloud by @amueller.</h2>
+      <a href="https://github.com/Naereen/generate-word-cloud.py" class="btn">View on GitHub</a>
+      <a href="https://github.com/Naereen/generate-word-cloud.py/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Naereen/generate-word-cloud.py/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Naereen/generate-word-cloud.py">View on GitHub</a>
+    <section class="main-content">
+      <h1>
+<a id="generate-word-cloudpy" class="anchor" href="#generate-word-cloudpy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>generate-word-cloud.py</code>
+</h1>
 
-          <h1 id="project_title">Generate-word-cloud.py</h1>
-          <h2 id="project_tagline">A simple Python 2 script to generate a PNG word-cloud image from a bunch of text files. Based on word_cloud by @amueller.</h2>
+<p>A simple Python <g-emoji alias="snake" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f40d.png" ios-version="6.0">🐍</g-emoji> script to generate a square wordcloud <g-emoji alias="cloud" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2601.png" ios-version="6.0">☁️</g-emoji> from one (or more) text file(s).
+Supporting both Python 2 and 3 (2.7+ and 3.4+).
+<a href="https://pypi.python.org/pypi/generatewordcloud"><img src="https://img.shields.io/pypi/v/generatewordcloud.svg" alt="generatewordcloud in pypi"></a></p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Naereen/generate-word-cloud.py/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Naereen/generate-word-cloud.py/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a id="generate-word-cloudpy" class="anchor" href="#generate-word-cloudpy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>generate-word-cloud.py</h1>
-
-<p>A simple Python 2 <img class="emoji" title=":snake:" alt=":snake:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f40d.png" height="20" width="20" align="absmiddle"> script to generate a square wordcloud <img class="emoji" title=":cloud:" alt=":cloud:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2601.png" height="20" width="20" align="absmiddle"> from one or more text files.</p>
-
-<p><img src="https://cdn.rawgit.com/Naereen/generate-word-cloud.py/master/wordcloud_meta.png" alt="generate-word-cloud example meta"></p>
+<p><img src="https://github.com/Naereen/generate-word-cloud.py/raw/master/wordcloud_meta.png" alt="generate-word-cloud example meta"></p>
 
 <blockquote>
 <p>Based on the great <a href="https://github.com/amueller/word_cloud/">word_cloud</a> module by <a href="https://github.com/amueller/">@amueller</a>.</p>
 </blockquote>
+
+<p><a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/v/generatewordcloud.svg" alt="PyPI version"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/l/generatewordcloud.svg" alt="PyPI license"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/format/generatewordcloud.svg" alt="PyPI format"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/pyversions/generatewordcloud.svg" alt="PyPI pyversions"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/implementation/generatewordcloud.svg" alt="PyPI implementation"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/status/generatewordcloud.svg" alt="PyPI status"></a></p>
 
 <hr>
 
@@ -48,16 +46,52 @@
 <a id="how-to-use-it" class="anchor" href="#how-to-use-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use it?</h2>
 
 <h3>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+<a id="1-requirements" class="anchor" href="#1-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. <a href="requirements.txt">Requirements</a>
+</h3>
 
-<p>Clone the repository, copy the <a href="https://cdn.rawgit.com/Naereen/generate-word-cloud.py/master/generate-word-cloud.py">script (generate-word-cloud.py)</a> somewhere in your PATH.</p>
+<p>The usual module <a href="http://matplotlib.org/">matplotlib</a> is needed for the plotting,
+<a href="https://github.com/docopt/docopt">docopt</a> is needed for the command line interface,
+and <a href="https://github.com/amueller/word_cloud/">word_cloud</a> is needed for the actual work (generating the cloud of words after reading the files).</p>
 
-<blockquote>
-<p>Note: The script is <em>not yet</em> available from <a href="http://www.pip-installer.org/">pip</a>. It will be, soon.</p>
-</blockquote>
+<p>The required Python (2 or 3) modules can be installed with <a href="http://pip.readthedocs.io/">pip</a>, either directly:</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># Directly:</span>
+sudo pip install matplotlib docopt word_cloud</pre></div>
+
+<p>Or with the <a href="requirements.txt">requirements.txt</a> file:</p>
+
+<div class="highlight highlight-source-shell"><pre>sudo pip install -r requirements.txt</pre></div>
+
+<p><em>Note</em>: if <a href="https://pypi.python.org/pypi/ansicolortags">ansicolortags</a> is available, it will be used to print nice colors in the help and during the generation of word clouds.</p>
 
 <h3>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+<a id="2-installation" class="anchor" href="#2-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Installation</h3>
+
+<p>Clone the repository, copy the <a href="https://github.com/Naereen/generate-word-cloud.py/raw/master/generate-word-cloud.py">script (generate-word-cloud.py)</a> somewhere in your PATH (e.g., <code>~/.local/bin/</code>).</p>
+
+<p>You can also just download the script itself:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ wget https://raw.githubusercontent.com/Naereen/generate-word-cloud.py/master/generate-word-cloud.py
+$ cp generate-word-cloud.py /path/to/a/directory/<span class="pl-k">in</span>/your/PATH/</pre></div>
+
+<p>Note: The script is <em>also</em> available from <a href="https://pypi.python.org/pypi/">PyPI</a> : <a href="https://pypi.python.org/pypi/generatewordcloud">pypi.python.org/pypi/generatewordcloud</a>.
+You can install it using <a href="http://www.pip-installer.org/">pip</a>.</p>
+
+<div class="highlight highlight-source-shell"><pre>$ pip install generatewordcloud
+$ <span class="pl-c"># Or maybe you need sudo rights:</span>
+$ sudo pip install generatewordcloud</pre></div>
+
+<p><a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/v/generatewordcloud.svg" alt="PyPI version"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/l/generatewordcloud.svg" alt="PyPI license"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/format/generatewordcloud.svg" alt="PyPI format"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/pyversions/generatewordcloud.svg" alt="PyPI pyversions"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/implementation/generatewordcloud.svg" alt="PyPI implementation"></a>
+<a href="https://pypi.python.org/pypi/generatewordcloud/"><img src="https://img.shields.io/pypi/status/generatewordcloud.svg" alt="PyPI status"></a></p>
+
+<hr>
+
+<h3>
+<a id="3-usage" class="anchor" href="#3-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Usage</h3>
 
 <h4>
 <a id="help" class="anchor" href="#help" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Help:</h4>
@@ -75,9 +109,9 @@
 
 <div class="highlight highlight-source-shell"><pre>$ generate-word-cloud.py -o ./hamlet.png ./hamlet.txt</pre></div>
 
-<p><img src="https://cdn.rawgit.com/Naereen/generate-word-cloud.py/master/wordcloud_hamlet.png" alt="generate-word-cloud example hamlet"></p>
+<p><img src="https://github.com/Naereen/generate-word-cloud.py/raw/master/wordcloud_hamlet.png" alt="generate-word-cloud example hamlet"></p>
 
-<p>(It should work on pretty big text files without any issue)</p>
+<p>(It should work on pretty big text files without any issue.)</p>
 
 <hr>
 
@@ -85,28 +119,31 @@
 <a id="other-examples" class="anchor" href="#other-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other examples</h2>
 
 <h3>
-<a id="from-a-lot-of-python-scripts--200" class="anchor" href="#from-a-lot-of-python-scripts--200" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From a lot of Python scripts (~ 200)</h3>
+<a id="from-a-lot-of-python-scripts--200-snake" class="anchor" href="#from-a-lot-of-python-scripts--200-snake" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From a lot of Python scripts (~ 200) <g-emoji alias="snake" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f40d.png" ios-version="6.0">🐍</g-emoji>
+</h3>
 
-<p><img src="https://cdn.rawgit.com/Naereen/generate-word-cloud.py/master/wordcloud_python.png" alt="generate-word-cloud example python"></p>
-
-<h3>
-<a id="from-a-lot-of-bash-scripts--150" class="anchor" href="#from-a-lot-of-bash-scripts--150" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From a lot of Bash scripts (~ 150)</h3>
-
-<p><img src="https://cdn.rawgit.com/Naereen/generate-word-cloud.py/master/wordcloud_bash.png" alt="generate-word-cloud example bash"></p>
+<p><img src="https://github.com/Naereen/generate-word-cloud.py/raw/master/wordcloud_python.png" alt="generate-word-cloud example python"></p>
 
 <h3>
-<a id="from-a-lot-of-latex-files--180" class="anchor" href="#from-a-lot-of-latex-files--180" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From a lot of LaTeX files (~ 180)</h3>
+<a id="from-a-lot-of-bash-scripts--150-shell" class="anchor" href="#from-a-lot-of-bash-scripts--150-shell" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From a lot of Bash scripts (~ 150) <g-emoji alias="shell" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41a.png" ios-version="6.0">🐚</g-emoji>
+</h3>
 
-<p><img src="https://cdn.rawgit.com/Naereen/generate-word-cloud.py/master/wordcloud_latex.png" alt="generate-word-cloud example LaTeX"></p>
+<p><img src="https://github.com/Naereen/generate-word-cloud.py/raw/master/wordcloud_bash.png" alt="generate-word-cloud example bash"></p>
 
 <h3>
-<a id="meta-example" class="anchor" href="#meta-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Meta example</h3>
+<a id="from-a-lot-of-latex-files--180-eggplant" class="anchor" href="#from-a-lot-of-latex-files--180-eggplant" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From a lot of LaTeX files (~ 180) <g-emoji alias="eggplant" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f346.png" ios-version="6.0">🍆</g-emoji>
+</h3>
 
-<p>Generate a wordcloud from the <a href="https://github.com/Naereen/generate-word-cloud.py/blob/master/README.md">README.md</a> and <a href="https://github.com/Naereen/generate-word-cloud.py/blob/master/generate-word-cloud.py">generate-word-cloud.py</a> files <strong>of this very project</strong>, save it to <code>wordcloud_meta.png</code>!</p>
+<p><img src="https://github.com/Naereen/generate-word-cloud.py/raw/master/wordcloud_latex.png" alt="generate-word-cloud example LaTeX"></p>
+
+<h3>
+<a id="art-meta-example" class="anchor" href="#art-meta-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><g-emoji alias="art" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f3a8.png" ios-version="6.0">🎨</g-emoji> Meta example</h3>
+
+<p>Generate a wordcloud from the <a href="https://github.com/Naereen/generate-word-cloud.py/tree/master/README.md">README.md</a> and <a href="https://github.com/Naereen/generate-word-cloud.py/tree/master/generate-word-cloud.py">generate-word-cloud.py</a> files <strong>of this very project</strong>, save it to <code>wordcloud_meta.png</code>!</p>
 
 <div class="highlight highlight-source-shell"><pre>$ generate-word-cloud.py -o ./wordcloud_meta.png ./<span class="pl-k">*</span>.md ./<span class="pl-k">*</span>.py</pre></div>
 
-<p><img src="https://cdn.rawgit.com/Naereen/generate-word-cloud.py/master/wordcloud_meta.png" alt="generate-word-cloud example meta"></p>
+<p><img src="https://github.com/Naereen/generate-word-cloud.py/raw/master/wordcloud_meta.png" alt="generate-word-cloud example meta"></p>
 
 <hr>
 
@@ -114,60 +151,75 @@
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
-<li>[x] Support one or more input files, will skip the one it fails to find or fails to read,</li>
-<li>[x] Customize output file, won't be overwritten (except with <code>-f</code> flag),</li>
-<li>[x] Nice command line interface (<a href="https://docs.python.org/2.7/library/argparse.html">argparse</a> powered),</li>
+<li>[x] Support one or more input file(s), will cleanly skip any file it fails to find or fails to read,</li>
+<li>[x] Custom output file, won't be overwritten (except with <code>-f</code> flag),</li>
+<li>[x] Nice command line interface (<a href="https://docs.python.org/2.7/library/argparse.html">argparse</a> powered). I switched to <a href="https://github.com/docopt/docopt">docopt</a> after realizing how awesome it is!</li>
 <li>[x] Has a command line option for every important parameter (max nb of words, width, height etc).</li>
+<li>[x] Input filenames with spaces in their name were seen as several files (e.g. <code>this file.txt</code>), FIXED with the switch to <a href="https://github.com/docopt/docopt">docopt</a>.</li>
 </ul>
 
 <hr>
 
 <h2>
-<a id="complete-documentation---help" class="anchor" href="#complete-documentation---help" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Complete documentation (<code>--help</code>)</h2>
+<a id="page_with_curl-complete-documentation---help" class="anchor" href="#page_with_curl-complete-documentation---help" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><g-emoji alias="page_with_curl" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4c3.png" ios-version="6.0">📃</g-emoji> Complete documentation (<code>--help</code>)</h2>
 
-<pre><code>generate-word-cloud.py -h
-usage: generate-word-cloud.py [-h] [-v] [-s] [-f] [-o OUTFILE] [-t TITLE]
-                              [-m MAX] [-w WIDTH] [-H HEIGHT]
-                              INFILE [INFILE ...]
+<pre><code>$ generate-word-cloud.py -h | --help
+Usage:
+  generate-word-cloud.py [-s | --show] [-f | --force] [-o OUTFILE | --outfile=OUTFILE]
+                         [-t TITLE | --title=TITLE] [-m MAX | --max=MAX]
+                         [-w WIDTH | --width=WIDTH] [-H HEIGHT | --height=HEIGHT]
+                         INFILE...
+  generate-word-cloud.py (-h | --help)
+  generate-word-cloud.py (-v | --version)
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -v, --version         show program's version number and exit
-
-  -s, --show            show the image but do not save it
-  -f, --force           force to write the image, even if present (default is to ask before overwriting an existing file)
-  -o OUTFILE, --outfile OUTFILE
-                        filename for the generated image, default is 'wordcloud.png'
-  -t TITLE, --title TITLE
-                        title for the image, default is None
-  -m MAX, --max MAX     max number of words to display on the cloud word
-  -w WIDTH, --width WIDTH
-                        width of the generate image
-  -H HEIGHT, --height HEIGHT
-                        height of the generate image
-  INFILE                a text file to read
+Options:
+  -h --help            Show this help message and exit.
+  -v --version         Show program's version number and exit.
+  -s --show            Show the image but do not save it [default False].
+  -f --force           Force to write the image, even if present (default is to ask before overwriting an existing file) [default False].
+  -o OUTFILE --outfile=OUTFILE
+                       Filename for the generated image [default 'wordcloud.png'].
+  -t TITLE --title=TITLE
+                       Title for the image [default None].
+  -m MAX --max MAX
+                       Max number of words to display on the cloud word [default 150].
+  -w WIDTH --width WIDTH
+                       Width of the generate image [default 400].
+  -H HEIGHT --height HEIGHT
+                       Height of the generate image [default 300].
+  INFILE               A text file to read.
 </code></pre>
 
 <hr>
 
 <h2>
-<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TODO?</h2>
+<a id="memo-todo" class="anchor" href="#memo-todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><g-emoji alias="memo" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" ios-version="6.0">📝</g-emoji> TODO</h2>
 
 <ul>
 <li>[x] Start it, from <a href="https://github.com/amueller/word_cloud/blob/master/examples/simple.py">this example</a>,</li>
-<li>[x] Run it on some interesting examples, embed them here,</li>
-<li>[ ] Check on weird encodings?,</li>
-<li>[ ] Test it against <img class="emoji" title=":closed_book:" alt=":closed_book:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d5.png" height="20" width="20" align="absmiddle"> VERY large files (million of line) ?,</li>
-<li>[ ] Test it against <img class="emoji" title=":books:" alt=":books:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4da.png" height="20" width="20" align="absmiddle"> LOTS of files (several thousands) ?,</li>
+<li>[x] Run it on some interesting examples, embed them here (as images),</li>
+<li>[X] Check on weird encodings? (i.e., not UTF-8). It works fine!</li>
+<li>[X] Test it against <g-emoji alias="closed_book" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d5.png" ios-version="6.0">📕</g-emoji> VERY large files (million of line) ? It works fine, slowly but fine.</li>
+<li>[X] Test it against <g-emoji alias="books" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4da.png" ios-version="6.0">📚</g-emoji> LOTS of files (several thousands) ? It works fine, slowly but fine.</li>
+<li>[X] Publish it on PyPI: it is available at <a href="https://pypi.python.org/pypi/generatewordcloud/">pypi.python.org/pypi/generatewordcloud/</a>
+</li>
 <li>[ ] Write a small article about it for <a href="http://perso.crans.org/besson/">my blog</a>.</li>
 </ul>
 
 <h3>
-<a id="knows-issues" class="anchor" href="#knows-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Knows issues</h3>
+<a id="bug-knows-issues" class="anchor" href="#bug-knows-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><g-emoji alias="bug" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" ios-version="6.0">🐛</g-emoji> Knows issues</h3>
 
 <ul>
-<li>[ ] Input filenames with spaces in their name are seen as several files.</li>
+<li>[ ] Only tested on (X)Ubuntu (15.10), but it should work on other GNU/Linux distribution and Mac OS X (and probably Windows), if they support <a href="https://github.com/docopt/docopt">docopt</a> and has both <a href="https://github.com/docopt/docopt">docopt</a> and <a href="https://github.com/amueller/word_cloud/">word_cloud</a> installed.</li>
 </ul>
+
+<h3>
+<a id="bug-unknown-issues" class="anchor" href="#bug-unknown-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><g-emoji alias="bug" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" ios-version="6.0">🐛</g-emoji> <strong>Unknown issues?</strong>
+</h3>
+
+<blockquote>
+<p><a href="https://github.com/Naereen/generate-word-cloud.py/issues/new">Use the issue tracker</a> to notify me of a bug!</p>
+</blockquote>
 
 <hr>
 
@@ -175,14 +227,19 @@ optional arguments:
 <a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2>
 
 <h3>
-<a id="why" class="anchor" href="#why" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why?</h3>
+<a id="why-write-this-script" class="anchor" href="#why-write-this-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>Why write this script?</em>
+</h3>
 
-<ul>
+<blockquote>
+<p>There already is a lot of <a href="https://duckduckgo.com/?q=cloud+word+generator&amp;ia=web">good cloud word generator online</a>, e.g. <a href="http://www.wordle.net/">wordle.net</a>.</p>
+</blockquote>
+
+<ol>
 <li>I wanted a way to visualize the major keywords of Bash and Python (my two <a href="https://wakatime.com/@lbesson">favorite programming languages</a>) and of Markdown/Strapdown, reStructuredText and LaTeX (my favorite typeset documents system),</li>
-<li>The original project <a href="https://github.com/amueller/word_cloud/">word_cloud</a> seemed cool. And it is. Great job <a href="https://github.com/amueller/">@amueller</a> <img class="emoji" title=":clap:" alt=":clap:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44f.png" height="20" width="20" align="absmiddle"> !</li>
+<li>The original project <a href="https://github.com/amueller/word_cloud/">word_cloud</a> seemed cool. And it is. Great job <a href="https://github.com/amueller/">@amueller</a> <g-emoji alias="clap" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44f.png" ios-version="6.0">👏</g-emoji> !</li>
 <li>
-<a href="https://www.academia.edu/20224642/">Clouds of words are interesting</a>!</li>
-</ul>
+<a href="https://www.academia.edu/20224642/">Clouds of words are interesting</a>! And Python is awesome!</li>
+</ol>
 
 <h3>
 <a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author</h3>
@@ -191,25 +248,32 @@ optional arguments:
 <p><a href="https://github.com/Naereen/">Lilian Besson (Naereen)</a>.</p>
 </blockquote>
 
-<h3>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/Naereen/generate-word-cloud.py/blob/master/LICENSE">License</a>
-</h3>
+<h2>
+<a id="scroll-license--" class="anchor" href="#scroll-license--" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><g-emoji alias="scroll" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dc.png" ios-version="6.0">📜</g-emoji> License ? <a href="https://github.com/Naereen/generate-word-cloud.py/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Naereen/generate-word-cloud.py.svg" alt="GitHub license"></a>
+</h2>
 
-<blockquote>
-<p><a href="http://www.gnu.org/licenses/gpl.html">GPLv3 License</a>.</p>
-</blockquote>
-      </section>
-    </div>
+<p>This plug-in is published under the terms of the <a href="http://www.gnu.org/licenses/gpl.html">GPLv3 License</a> (file <a href="LICENSE.txt">LICENSE.txt</a>),
+© <a href="https://GitHub.com/Naereen">Lilian Besson</a>, 2016.</p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Generate-word-cloud.py maintained by <a href="https://github.com/Naereen">Naereen</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p><a href="https://GitHub.com/Naereen/generate-word-cloud.py/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a>
+<a href="https://GitHub.com/Naereen/ama"><img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" alt="Ask Me Anything !"></a>
+<a href="https://GitHub.com/Naereen/generate-word-cloud.py/"><img src="https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/generate-word-cloud.py/README.md?pixel" alt="Analytics"></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg" alt="made-with-python"></a></p>
+
+<p><a href="http://ForTheBadge.com"><img src="http://ForTheBadge.com/images/badges/uses-badges.svg" alt="ForTheBadge uses-badges"></a>
+<a href="https://GitHub.com/"><img src="http://ForTheBadge.com/images/badges/uses-git.svg" alt="ForTheBadge uses-git"></a></p>
+
+<p><a href="https://GitHub.com/Naereen/"><img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="ForTheBadge built-with-love"></a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Naereen/generate-word-cloud.py">Generate-word-cloud.py</a> is maintained by <a href="https://github.com/Naereen">Naereen</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-              <script type="text/javascript">
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -219,7 +283,6 @@ optional arguments:
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
 
   </body>
 </html>
