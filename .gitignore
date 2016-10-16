@@ -1,4 +1,5 @@
 # Produced by the joe cli script (cf. http://goel.io/joe)
+*~
 # For Python
 
 # Byte-compiled / optimized / DLL files
@@ -56,3 +57,4 @@ docs/_build/
 # PyBuilder
 target/
 
+dist/

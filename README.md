@@ -1,6 +1,7 @@
 # ``generate-word-cloud.py``
 A simple Python :snake: script to generate a square wordcloud :cloud: from one (or more) text file(s).
 Supporting both Python 2 and 3 (2.7+ and 3.4+).
+[![generatewordcloud in pypi](https://img.shields.io/pypi/v/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud)
 
 ![generate-word-cloud example meta](./wordcloud_meta.png)
 
@@ -38,7 +39,23 @@ $ wget https://raw.githubusercontent.com/Naereen/generate-word-cloud.py/master/g
 $ cp generate-word-cloud.py /path/to/a/directory/in/your/PATH/
 ```
 
-> Note: The script is *not yet* available from [pip](http://www.pip-installer.org/). It might be, soon.
+Note: The script is *also* available from [PyPI](https://pypi.python.org/pypi/) : [pypi.python.org/pypi/generatewordcloud](https://pypi.python.org/pypi/generatewordcloud).
+You can install it using [pip](http://www.pip-installer.org/).
+
+```bash
+$ pip install generatewordcloud
+$ # Or maybe you need sudo rights:
+$ sudo pip install generatewordcloud
+```
+
+[![PyPI version](https://img.shields.io/pypi/v/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI license](https://img.shields.io/pypi/l/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI format](https://img.shields.io/pypi/format/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI implementation](https://img.shields.io/pypi/implementation/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI status](https://img.shields.io/pypi/status/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+
+----
 
 ### 3. Usage
 #### Help:
