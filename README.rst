@@ -9,6 +9,14 @@ Supporting both Python 2 and 3 (2.7+ and 3.4+).
 
 Based on the great `word\_cloud <https://github.com/amueller/word_cloud/>`__ module by `@amueller <https://github.com/amueller/>`__.
 
+
+|PyPI version|
+|PyPI license|
+|PyPI format|
+|PyPI pyversions|
+|PyPI implementation|
+|PyPI status|
+
 --------------
 
 How to use it?
