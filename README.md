@@ -7,6 +7,13 @@ Supporting both Python 2 and 3 (2.7+ and 3.4+).
 
 > Based on the great [word_cloud](https://github.com/amueller/word_cloud/) module by [@amueller](https://github.com/amueller/).
 
+[![PyPI version](https://img.shields.io/pypi/v/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI license](https://img.shields.io/pypi/l/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI format](https://img.shields.io/pypi/format/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI implementation](https://img.shields.io/pypi/implementation/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+[![PyPI status](https://img.shields.io/pypi/status/generatewordcloud.svg)](https://pypi.python.org/pypi/generatewordcloud/)
+
 ----
 
 ## How to use it?
@@ -147,7 +154,7 @@ Options:
 - [X] Check on weird encodings? (i.e., not UTF-8). It works fine!
 - [X] Test it against :closed_book: VERY large files (million of line) ? It works fine, slowly but fine.
 - [X] Test it against :books: LOTS of files (several thousands) ? It works fine, slowly but fine.
-- [ ] Publish it on PyPI !
+- [X] Publish it on PyPI: it is available at [pypi.python.org/pypi/generatewordcloud/](https://pypi.python.org/pypi/generatewordcloud/)
 - [ ] Write a small article about it for [my blog](http://perso.crans.org/besson/).
 
 ### :bug: Knows issues

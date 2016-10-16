@@ -196,7 +196,7 @@ TODO
    ? It works fine, slowly but fine.
 -  [X] Test it against LOTS of files (several thousands) ? It
    works fine, slowly but fine.
--  [ ] Publish it on PyPI !
+-  [X] Publish it on PyPI: it is available at `pypi.python.org/pypi/generatewordcloud/ <https://pypi.python.org/pypi/generatewordcloud/>`_.
 -  [ ] Write a small article about it for `my blog <http://perso.crans.org/besson/>`__.
 
 Knows issues
