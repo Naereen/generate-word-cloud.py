@@ -177,7 +177,7 @@ Options:
 > [Lilian Besson (Naereen)](https://github.com/Naereen/).
 
 ## :scroll: License ? [![GitHub license](https://img.shields.io/github/license/Naereen/generate-word-cloud.py.svg)](https://github.com/Naereen/generate-word-cloud.py/blob/master/LICENSE)
-This plug-in is published under the terms of the [GPLv3 License](http://www.gnu.org/licenses/gpl.html) (file [LICENSE.txt](LICENSE.txt)),
+This plug-in is published under the terms of the [GPLv3 License](http://www.gnu.org/licenses/gpl.html) (file [LICENSE](LICENSE)),
 © [Lilian Besson](https://GitHub.com/Naereen), 2016.
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/generate-word-cloud.py/graphs/commit-activity)
