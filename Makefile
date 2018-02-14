@@ -45,16 +45,16 @@ dochtml:	coverage html clean_pyc
 pypi:	pypi_check pypi_sdist pypi_upload
 
 pypi_check:
-	./setup.py check
+	python3 ./setup.py check
 
 pypi_sdist:
-	./setup.py sdist
+	python3 ./setup.py sdist
 
 wheel:
-	./setup.py bdist_wheel --universal
+	python3 ./setup.py bdist_wheel --universal
 
 pypi_upload:
-	# ./setup.py sdist upload --sign
+	# python3 ./setup.py sdist upload --sign
 	twine upload dist/*
 
 pythonhosted_doc:
