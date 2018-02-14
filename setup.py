@@ -12,11 +12,17 @@ from distutils.core import setup
 import generatewordcloud
 # FIXED change name of the file to be a valid Python module name
 
+description = long_description = 'A simple Python (2 or 3) script to generate a PNG word-cloud image from a bunch of text files. Based on word_cloud.'
+try:
+    long_description = ''.join(open('README.rst', 'r').readlines())
+except IOError:
+    print("Lazy fix for a bug when 'pip install'ing the module. See https://github.com/Naereen/generate-word-cloud.py/issues/2")
+
 
 setup(name='generatewordcloud',
       version=generatewordcloud.version,
-      description='A simple Python (2 or 3) script to generate a PNG word-cloud image from a bunch of text files. Based on word_cloud.',
-      long_description=''.join(open('README.rst', 'r').readlines()),
+      description=description,
+      long_description=long_description,
       author='Lilian Besson',
       author_email='naereen@crans.org',
       url='https://github.com/Naereen/generate-word-cloud.py',
