@@ -152,7 +152,7 @@ Options:
 - [x] Start it, from [this example](https://github.com/amueller/word_cloud/blob/master/examples/simple.py),
 - [x] Run it on some interesting examples, embed them here (as images),
 - [X] Check on weird encodings? (i.e., not UTF-8). It works fine!
-- [X] Test it against :closed_book: VERY large files (million of line) ? It works fine, slowly but fine.
+- [X] Test it against :closed_book: VERY large files (millions of lines) ? It works fine, slowly but fine.
 - [X] Test it against :books: LOTS of files (several thousands) ? It works fine, slowly but fine.
 - [X] Publish it on PyPI: it is available at [pypi.python.org/pypi/generatewordcloud/](https://pypi.python.org/pypi/generatewordcloud/)
 - [ ] Write a small article about it for [my blog](http://perso.crans.org/besson/).
