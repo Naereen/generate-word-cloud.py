@@ -200,7 +200,7 @@ TODO
 -  [x] Start it, from `this example <https://github.com/amueller/word_cloud/blob/master/examples/simple.py>`__,
 -  [x] Run it on some interesting examples, embed them here (as images),
 -  [X] Check on weird encodings? (i.e., not UTF-8). It works fine!
--  [X] Test it against :closed\_book: VERY large files (million of line)
+-  [X] Test it against :closed\_book: VERY large files (millions of lines)
    ? It works fine, slowly but fine.
 -  [X] Test it against LOTS of files (several thousands) ? It
    works fine, slowly but fine.
